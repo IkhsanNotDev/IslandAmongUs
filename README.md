@@ -106,7 +106,7 @@ flowchart TD
 
 ---
 
-> Dokumentasi lengkap plugin.
+# Dokumentasi lengkap plugin.
 
 ## 📚 Daftar Isi
 - Cara Setting
