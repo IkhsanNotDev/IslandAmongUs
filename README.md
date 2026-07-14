@@ -57,7 +57,7 @@ Game berlangsung di satu pulau dengan area-area khusus (kantin, reaktor, laborat
 
 <div align="center">
 
-```mermaid
+```
 flowchart TD
     A[🎮 Game Dimulai] --> B{👥 Bagi Role}
     B --> C[🛠️ Crewmate: Dapat Tugas]
@@ -77,6 +77,7 @@ flowchart TD
     F --> P{🛠️ Sabotase Diperbaiki?}
     P -->|Tidak & ⏰ Waktu Habis| Q[👾 Impostor Menang]
     P -->|Ya| E
+```
 
 </div>
 
