@@ -53,31 +53,46 @@ Game berlangsung di satu pulau dengan area-area khusus (kantin, reaktor, laborat
 
 ---
 
-## 🧩 Alur Game
-
-<div align="center">
+## 🧩 Alur Mekanisme Permainan
 
 ```
 flowchart TD
-    A[🎮 Game Dimulai] --> B{👥 Bagi Role}
-    B --> C[🛠️ Crewmate: Dapat Tugas]
-    B --> D[👾 Impostor: Dapat Cooldown Bunuh]
-    C --> E[📋 Kerjakan Tugas]
-    D --> F[⚡ Sabotase / 🔪 Bunuh]
-    E --> G{✅ Semua Tugas Selesai?}
-    G -->|Ya| H[🏆 Crewmate Menang]
-    G -->|Tidak| I[📢 Laporkan Mayat / Darurat]
-    I --> J[🗳️ Rapat & Voting]
-    J --> K{⚖️ Terdakwa Digantung?}
-    K -->|Ya| L[💀 Eliminasi Pemain]
-    K -->|Tidak| M[▶️ Lanjutkan Game]
-    L --> N{📊 Jumlah Crewmate = Impostor?}
-    N -->|Ya| O[👾 Impostor Menang]
-    N -->|Tidak| E
-    F --> P{🛠️ Sabotase Diperbaiki?}
-    P -->|Tidak & ⏰ Waktu Habis| Q[👾 Impostor Menang]
-    P -->|Ya| E
+    Start((🎮 Game Dimulai)) --> Role{👥 Penentuan Role}
+    
+    Role --> Crew[🛠️ Crewmate: Selesaikan Tugas]
+    Role --> Imp[👾 Impostor: Sabotase & Eliminasi]
+    
+    Crew --> Task[📋 Progress Tugas]
+    Task --> CheckTask{✅ Semua Tugas Selesai?}
+    
+    CheckTask -- Ya --> WinCrew[🏆 Crewmate Menang]
+    CheckTask -- Tidak --> Meeting[📢 Diskusi & Voting]
+    
+    Imp --> Sabotage[⚡ Sabotase / 🔪 Kill]
+    Sabotage --> Repair{🛠️ Sabotase Diperbaiki?}
+    Repair -- Tidak & Waktu Habis --> WinImp[👾 Impostor Menang]
+    Repair -- Ya --> Crew
+    
+    Meeting --> Vote{🗳️ Hasil Voting}
+    Vote -- Eliminasi --> Eject[💀 Pemain Tereliminasi]
+    Vote -- Skip --> Continue[▶️ Lanjutkan Permainan]
+    
+    Eject --> Balance{📊 Jumlah Crew = Impostor?}
+    Balance -- Ya --> WinImp
+    Balance -- Tidak --> Crew
+    
+    Continue --> Crew
+
 ```
+
+---
+
+### 📝 Penjelasan Singkat
+
+* **Crewmate**: Berfokus pada penyelesaian tugas (*Task*) dan menjaga kestabilan sistem.
+* **Impostor**: Mengganggu alur permainan melalui sabotase dan eliminasi rahasia.
+* **Voting**: Mekanisme penentuan tersangka berdasarkan diskusi pemain.
+* **Kemenangan**: Ditentukan oleh penyelesaian tugas, eliminasi Impostor, atau kegagalan sistem.
 
 </div>
 
