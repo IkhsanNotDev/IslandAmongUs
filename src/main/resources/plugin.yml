@@ -1,0 +1,56 @@
+name: IslandBridgeAmongUs
+main: com.islandbridge.IslandBridgeAmongUs
+version: 1.0.0
+api-version: 1.21
+author: BridgeBuilder
+description: Plugin Among Us dengan sistem jembatan, role, task, dan voice chat integration.
+
+# SoftDepend agar Simple Voice Chat dimuat terlebih dahulu
+softdepend: [voicechat]
+
+commands:
+  ib:
+    description: Command utama plugin IslandBridgeAmongUs
+    usage: /ib <subcommand> [args]
+    aliases: [islandbridge]
+  vote:
+    description: Membuka voting
+    usage: /vote [player]
+  setnpc:
+    description: Set NPC task
+    usage: /setnpc <nama> <durasi>
+  delnpc:
+    description: Hapus NPC task
+    usage: /delnpc <nama>
+  listnpc:
+    description: Daftar NPC task
+    usage: /listnpc
+  setpohon:
+    description: Tandai pohon sebagai task
+    usage: /setpohon
+  setchest:
+    description: Tandai chest sebagai task chest
+    usage: /setchest
+  task:
+    description: Manajemen task
+    usage: /task
+  skin:
+    description: Manajemen skin
+    usage: /skin <subcommand>
+
+permissions:
+  islandbridge.admin:
+    description: Semua akses admin
+    default: op
+  islandbridge.start:
+    description: Mulai game
+    default: op
+  islandbridge.stop:
+    description: Hentikan game
+    default: op
+  islandbridge.set:
+    description: Set lokasi
+    default: op
+  islandbridge.reload:
+    description: Reload config
+    default: op

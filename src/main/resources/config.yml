@@ -1,0 +1,30 @@
+# IslandBridgeAmongUs Configuration
+
+game:
+  min-players: 2
+  countdown: 10
+  meeting-time: 45
+
+roles:
+  impostor-count: 1
+  joker-enabled: true
+
+lobby:
+  location: null
+map-spawn:
+  location: null
+meeting-center:
+  location: null
+
+# Sabotage Settings
+sabotage:
+  lamps: []
+  generator: null
+  lamp-cooldown-seconds: 90
+  skinwalker-cooldown-seconds: 150
+  skinwalker-blind-duration-ticks: 100
+  max-autodetect-radius: 200
+
+# Task System Settings
+task:
+  max-autodetect-radius: 200

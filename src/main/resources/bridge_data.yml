@@ -1,0 +1,14 @@
+# Data jembatan
+pulau1: null
+pulau2: null
+lebar_kiri: 3
+lebar_kanan: 3
+total_baris: 0
+baris_built: 0
+target_plank: 0
+plank_per_baris: 0
+is_built: false
+npc_name: "&b&l[NPC] &e&lPembangun Jembatan"
+armorstand:
+  uuid: null
+  location: null
