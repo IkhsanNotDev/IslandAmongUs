@@ -4,7 +4,7 @@
 
 ### Minecraft Plugin - Social Deduction Game
 
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/IkhsanNotDev/IslandAmongUs/releases)
+[![Version](https://img.shields.io/badge/Version-release-blue?style=for-the-badge)](https://github.com/IkhsanNotDev/IslandAmongUs/releases)
 [![Download](https://img.shields.io/badge/Download-Latest-ff69b4?style=for-the-badge&logo=github)](https://github.com/IkhsanNotDev/IslandAmongUs/releases/latest)
 
 > **Plugin Minecraft bergaya Among Us yang berjalan di dalam satu pulau (Island)**  
