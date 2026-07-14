@@ -233,7 +233,6 @@ mvn clean package
 
 [![Issues](https://img.shields.io/badge/Report_Bug-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IkhsanNotDev/IslandAmongUs/issues)
 [![Pull Requests](https://img.shields.io/badge/Pull_Request-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IkhsanNotDev/IslandAmongUs/pulls)
-[![Discord](https://img.shields.io/badge/Join_Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/yourinvite)
 
 </div>
 
