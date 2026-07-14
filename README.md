@@ -53,44 +53,75 @@ Game berlangsung di satu pulau dengan area-area khusus (kantin, reaktor, laborat
 
 ```
 flowchart TD
-    Start((🎮 Game Dimulai)) --> Role{👥 Penentuan Role}
+    Start((🎮 Game Dimulai)) --> Countdown[⏳ Countdown 10 Detik]
+    Countdown --> Role{👥 Penentuan Role}
     
-    Role --> Crew[🛠️ Crewmate: Selesaikan Tugas]
-    Role --> Imp[👾 Impostor: Sabotase & Eliminasi]
+    Role --> Crew[🛠️ Crewmate]
+    Role --> Imp[👾 Impostor]
+    Role --> Joker[🃏 Joker]
+    Role --> SkinWalker[👤 Skin Walker]
     
-    Crew --> Task[📋 Progress Tugas]
-    Task --> CheckTask{✅ Semua Tugas Selesai?}
+    Crew --> CrewTasks[📋 Mengerjakan Task]
+    CrewTasks --> BuildBridge[🏗️ Deposit Kayu ke NPC Jembatan]
+    BuildBridge --> CheckBridge{🌉 Jembatan Selesai?}
+    CheckBridge -- Ya --> WinCrew[🏆 Crewmate Menang]
+    CheckBridge -- Tidak --> CheckTask{✅ Semua Task Selesai?}
+    CheckTask -- Ya --> WinCrew
+    CheckTask -- Tidak --> Meeting[📢 Rapat Darurat / Voting]
     
-    CheckTask -- Ya --> WinCrew[🏆 Crewmate Menang]
-    CheckTask -- Tidak --> Meeting[📢 Diskusi & Voting]
+    Imp --> Kill[🔪 Membunuh Crewmate]
+    Imp --> Sabotage[⚡ Sabotase Lampu / Generator]
+    Kill --> CheckAlive{☠️ Semua Crewmate Mati?}
+    Sabotage --> CheckSabotage{🛠️ Sabotase Diperbaiki?}
+    CheckSabotage -- Tidak & Waktu Habis --> WinImp[👾 Impostor Menang]
+    CheckSabotage -- Ya --> CrewTasks
+    CheckAlive -- Ya --> WinImp
     
-    Imp --> Sabotage[⚡ Sabotase / 🔪 Kill]
-    Sabotage --> Repair{🛠️ Sabotase Diperbaiki?}
-    Repair -- Tidak & Waktu Habis --> WinImp[👾 Impostor Menang]
-    Repair -- Ya --> Crew
+    Joker --> JokerTask[📋 Mengerjakan Task]
+    JokerTask --> JokerGoal{🗳️ Berhasil Di-Vote Keluar?}
+    JokerGoal -- Ya --> WinJoker[🃏 Joker Menang]
+    JokerGoal -- Tidak --> CheckAliveJoker{☠️ Crewmate/Impostor Menang?}
+    CheckAliveJoker -- Ya --> LoseJoker[💀 Joker Kalah]
+    
+    SkinWalker --> SkinTask[📋 Mengerjakan Task]
+    SkinTask --> SkinBlind[👤 Skill: Membutakan Pemain]
+    SkinBlind --> SkinGoal{🗳️ Berhasil Di-Vote Keluar?}
+    SkinGoal -- Ya --> WinSkinWalker[👤 Skin Walker Menang]
+    SkinGoal -- Tidak --> CheckAliveSkin{☠️ Crewmate/Impostor Menang?}
+    CheckAliveSkin -- Ya --> LoseSkin[💀 Skin Walker Kalah]
     
     Meeting --> Vote{🗳️ Hasil Voting}
     Vote -- Eliminasi --> Eject[💀 Pemain Tereliminasi]
-    Vote -- Skip --> Continue[▶️ Lanjutkan Permainan]
+    Vote -- Skip / Seri --> Continue[▶️ Lanjutkan Permainan]
     
-    Eject --> Balance{📊 Jumlah Crew = Impostor?}
-    Balance -- Ya --> WinImp
-    Balance -- Tidak --> Crew
+    Eject --> CheckEject{⚖️ Jumlah Crew = Impostor?}
+    CheckEject -- Ya --> WinImp
+    CheckEject -- Tidak --> CheckCrewAlive{☠️ Semua Crewmate Mati?}
+    CheckCrewAlive -- Ya --> WinImp
+    CheckCrewAlive -- Tidak --> CrewTasks
     
-    Continue --> Crew
+    Continue --> CrewTasks
 
 ```
 
 ---
 
-### 📝 Penjelasan Singkat
+### 📝 Penjelasan Singkat Alur
 
-* **Crewmate**: Berfokus pada penyelesaian tugas (*Task*) dan menjaga kestabilan sistem.
-* **Impostor**: Mengganggu alur permainan melalui sabotase dan eliminasi rahasia.
-* **Voting**: Mekanisme penentuan tersangka berdasarkan diskusi pemain.
-* **Kemenangan**: Ditentukan oleh penyelesaian tugas, eliminasi Impostor, atau kegagalan sistem.
-
-</div>
+| Fase | Deskripsi |
+|------|-----------|
+| **Countdown** | Pemain diberi waktu 10 detik sebelum game dimulai, role akan ditampilkan setelah countdown |
+| **Role Assignment** | Pemain dibagi menjadi: Crewmate, Impostor, Joker, atau Skin Walker (bergantung konfigurasi) |
+| **Crewmate** | Mengerjakan task untuk mendapatkan Oak Planks, deposit ke NPC jembatan hingga jembatan selesai |
+| **Impostor** | Membunuh crewmate diam-diam dan melakukan sabotase lampu untuk menghambat progres |
+| **Joker** | Mengerjakan task seperti crewmate, tetapi tujuan utamanya adalah di-vote keluar oleh pemain lain |
+| **Skin Walker** | Mengerjakan task dan memiliki skill untuk membutakan pemain lain dalam radius tertentu |
+| **Meeting** | Terjadi saat ada yang melaporkan mayat atau tombol darurat ditekan. Semua pemain teleport ke meeting center dan voting dilakukan |
+| **Voting** | Pemain memilih tersangka dengan `/vote [player]` atau `/skip`. Jika mayoritas setuju, pemain dieliminasi |
+| **Kemenangan Crewmate** | Jembatan selesai dibangun ATAU semua tugas selesai ATAU semua Impostor mati |
+| **Kemenangan Impostor** | Jumlah Crewmate = Impostor ATAU semua Crewmate mati |
+| **Kemenangan Joker** | Berhasil di-vote keluar oleh pemain lain |
+| **Kemenangan Skin Walker** | Berhasil di-vote keluar oleh pemain lain |
 
 ---
 
