@@ -6,10 +6,10 @@
 
 [![Spigot](https://img.shields.io/badge/Spigot-1.16.5--1.20-yellow?style=for-the-badge&logo=spigotmc)](https://www.spigotmc.org/)
 [![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java)](https://adoptium.net/)
-[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/yourusername/AmongUsIsland/releases)
+[![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/IkhsanNotDev/IslandAmongUs/releases)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Discord](https://img.shields.io/badge/Discord-Join-7289DA?style=for-the-badge&logo=discord)](https://discord.gg/yourinvite)
-[![Download](https://img.shields.io/badge/Download-Latest-ff69b4?style=for-the-badge&logo=github)](https://github.com/yourusername/AmongUsIsland/releases/latest)
+[![Download](https://img.shields.io/badge/Download-Latest-ff69b4?style=for-the-badge&logo=github)](https://github.com/IkhsanNotDev/IslandAmongUs/releases/latest)
 
 > **Plugin Minecraft bergaya Among Us yang berjalan di dalam satu pulau (Island)**  
 > *Rasakan pengalaman bermain social deduction dengan tugas-tugas unik, pertemuan darurat, dan sistem sabotase—semuanya dalam dunia blok!*
@@ -131,6 +131,7 @@ flowchart TD
 
 ## ⚙️ Konfigurasi (config.yml)
 
+```yaml
 # ═══════════════════════════════════════
 #  Among Us Island - Config.yml
 # ═══════════════════════════════════════
@@ -179,6 +180,7 @@ messages:
   task-complete: "&a✅ Tugas selesai! Tersisa {remaining} tugas"
   killed: "&c💀 Kamu dibunuh oleh Impostor!"
   voted-out: "&e🗳️ {player} dikeluarkan dari pesawat!"
+```
 
 ---
 
@@ -190,7 +192,7 @@ messages:
 
 </div>
 
-1. **Download** file `AmongUsIsland.jar` dari [**Release Terbaru**](https://github.com/yourusername/AmongUsIsland/releases/latest)
+1. **Download** file `AmongUsIsland.jar` dari [**Release Terbaru**](https://github.com/IkhsanNotDev/IslandAmongUs/releases/latest)
 2. **Letakkan** di folder `plugins/` server Spigot/Paper (versi 1.16.5+)
 3. **Restart** server (disarankan) atau gunakan `/reload`
 4. **Konfigurasi** file `plugins/AmongUsIsland/config.yml` sesuai keinginan
@@ -209,16 +211,18 @@ messages:
 
 </div>
 
+```bash
 # Clone repository
-git clone https://github.com/yourusername/AmongUsIsland.git
+git clone https://github.com/IkhsanNotDev/IslandAmongUs.git
 
 # Masuk ke direktori
-cd AmongUsIsland
+cd IslandAmongUs
 
 # Build dengan Maven
 mvn clean package
 
 # Hasil .jar ada di folder target/
+```
 
 **Teknologi yang digunakan:**
 - [Spigot API](https://www.spigotmc.org/) - Framework utama
@@ -231,8 +235,8 @@ mvn clean package
 
 <div align="center">
 
-[![Issues](https://img.shields.io/badge/Report_Bug-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/AmongUsIsland/issues)
-[![Pull Requests](https://img.shields.io/badge/Pull_Request-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername/AmongUsIsland/pulls)
+[![Issues](https://img.shields.io/badge/Report_Bug-FF5722?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IkhsanNotDev/IslandAmongUs/issues)
+[![Pull Requests](https://img.shields.io/badge/Pull_Request-4CAF50?style=for-the-badge&logo=github&logoColor=white)](https://github.com/IkhsanNotDev/IslandAmongUs/pulls)
 [![Discord](https://img.shields.io/badge/Join_Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/yourinvite)
 
 </div>
@@ -267,7 +271,7 @@ furnished to do so, subject to the following conditions...
 
 | | |
 |---|---|
-| **Dikembangkan oleh** | **[Nama Kamu]** |
+| **Dikembangkan oleh** | **[IkhsanNotDev]** |
 | **Inspirasi** | [Among Us](https://www.innersloth.com/games/among-us/) oleh Innersloth |
 | **Kontributor** | Semua kontributor dan tester |
 
@@ -281,6 +285,6 @@ furnished to do so, subject to the following conditions...
 
 ---
 
-**Made with ❤️ by [Nama Kamu]**
+**Made with ❤️ by [IkhsanNotDev]**
 
 </div>
