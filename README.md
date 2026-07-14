@@ -248,7 +248,7 @@ Silakan buka **Issue** atau kirim **Pull Request** — kontribusi sangat terbuka
 
 MIT License
 
-Copyright (c) 2024 **[IkhsanNotDev]**
+Copyright (c) 2026 **[IkhsanNotDev]**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -273,10 +273,10 @@ furnished to do so, subject to the following conditions...
 ### 📚 Referensi & Inspirasi
 | Kategori | Sumber |
 | :--- | :--- |
-| **Gameplay Mechanics** | [Corazon & Lapar Gang](https://youtu.be/jjPeCMMWEoQ?si=cIcW8FIizzehxTcW) |
+| **Gameplay preview** | [Corazon & Lapar Gang](https://youtu.be/jjPeCMMWEoQ?si=cIcW8FIizzehxTcW) |
 | **Inspirasi Utama** | [MrBeast - Among Us Series](https://youtu.be/FO9kMeIQI7M?si=p3rZaYegUn7uurkz) |
 | **Referensi Tambahan** | [Innersloth - Among Us](https://www.innersloth.com/games/among-us/) |
-| **Konsep Eksklusif** | [Video Eksplorasi Tantangan](https://youtu.be/nH9R0Jpqeqc?si=z34mcQpbmojCuSLC) |
+| **Referensi Tambahan** | [Video Eksplorasi Tantangan](https://youtu.be/nH9R0Jpqeqc?si=z34mcQpbmojCuSLC) |
 
 </div>
 
