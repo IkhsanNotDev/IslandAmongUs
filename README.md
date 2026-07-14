@@ -240,8 +240,6 @@ Key:
 
 ---
 
----
-
 ## 🛠️ Instalasi
 
 <div align="center">
