@@ -4,11 +4,7 @@
 
 ### Minecraft Plugin - Social Deduction Game
 
-[![Spigot](https://img.shields.io/badge/Spigot-1.16.5--1.20-yellow?style=for-the-badge&logo=spigotmc)](https://www.spigotmc.org/)
-[![Java](https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java)](https://adoptium.net/)
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge)](https://github.com/IkhsanNotDev/IslandAmongUs/releases)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Discord](https://img.shields.io/badge/Discord-Join-7289DA?style=for-the-badge&logo=discord)](https://discord.gg/yourinvite)
 [![Download](https://img.shields.io/badge/Download-Latest-ff69b4?style=for-the-badge&logo=github)](https://github.com/IkhsanNotDev/IslandAmongUs/releases/latest)
 
 > **Plugin Minecraft bergaya Among Us yang berjalan di dalam satu pulau (Island)**  
@@ -252,7 +248,7 @@ Silakan buka **Issue** atau kirim **Pull Request** — kontribusi sangat terbuka
 
 MIT License
 
-Copyright (c) 2024 [Nama Kamu]
+Copyright (c) 2024 **[IkhsanNotDev]**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -265,15 +261,22 @@ furnished to do so, subject to the following conditions...
 
 ---
 
-## 🙏 Kredit
+## 🛠️ Kredit & Referensi
 
 <div align="center">
 
-| | |
-|---|---|
-| **Dikembangkan oleh** | **[IkhsanNotDev]** |
-| **Inspirasi** | [Among Us](https://www.innersloth.com/games/among-us/) oleh Innersloth |
-| **Kontributor** | Semua kontributor dan tester |
+### 👤 Kredit
+| Peran | Nama |
+| :--- | :--- |
+| **Pengembang Utama** | [IkhsanNotDev](https://github.com/IkhsanNotDev) |
+
+### 📚 Referensi & Inspirasi
+| Kategori | Sumber |
+| :--- | :--- |
+| **Gameplay Mechanics** | [Corazon & Lapar Gang](https://youtu.be/jjPeCMMWEoQ?si=cIcW8FIizzehxTcW) |
+| **Inspirasi Utama** | [MrBeast - Among Us Series](https://youtu.be/FO9kMeIQI7M?si=p3rZaYegUn7uurkz) |
+| **Referensi Tambahan** | [Innersloth - Among Us](https://www.innersloth.com/games/among-us/) |
+| **Konsep Eksklusif** | [Video Eksplorasi Tantangan](https://youtu.be/nH9R0Jpqeqc?si=z34mcQpbmojCuSLC) |
 
 </div>
 
