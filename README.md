@@ -94,18 +94,6 @@ flowchart TD
 
 ---
 
-## 📸 Screenshot
-
-<div align="center">
-
-| 🖥️ GUI Tugas | 📢 Pertemuan Darurat | ⚡ Sabotase Reaktor |
-|:---:|:---:|:---:|
-| *[Screenshot 1]* | *[Screenshot 2]* | *[Screenshot 3]* |
-
-</div>
-
----
-
 # Dokumentasi lengkap plugin.
 
 ## 📚 Daftar Isi
