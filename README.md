@@ -106,77 +106,139 @@ flowchart TD
 
 ---
 
-## 📦 Command & Permission
+> Dokumentasi lengkap plugin.
 
-<div align="center">
-
-| Command | Permission | Deskripsi |
-|---------|------------|-----------|
-| `/amongus start` | `amongus.admin` | Memulai game secara paksa |
-| `/amongus stop` | `amongus.admin` | Menghentikan game paksa |
-| `/amongus join` | `amongus.player` | Bergabung ke antrian game |
-| `/amongus leave` | `amongus.player` | Keluar dari game |
-| `/amongus stats [player]` | `amongus.player` | Melihat statistik pemain |
-| `/amongus reload` | `amongus.admin` | Reload config tanpa restart |
-
-</div>
-
-> **Permission default**: `amongus.*` (semua akses) untuk admin.
+## 📚 Daftar Isi
+- Cara Setting
+- Cara Main
+- Command
+- Permission
+- Role
+- Setting
+- FAQ
 
 ---
 
-## ⚙️ Konfigurasi (config.yml)
+# 🏗️ Cara Setting
 
-```yaml
-# ═══════════════════════════════════════
-#  Among Us Island - Config.yml
-# ═══════════════════════════════════════
-
-# ─── Pengaturan Game ───
-game:
-  min-players: 4           # Minimal pemain untuk mulai
-  max-players: 12          # Maksimal pemain
-  impostor-count: 2        # Jumlah impostor
-  game-time-seconds: 300   # Durasi game (detik)
-  task-amount: 8           # Jumlah tugas per crewmate
-  meeting-cooldown: 30     # Cooldown rapat (detik)
-  kill-cooldown: 20        # Cooldown bunuh (detik)
-  emergency-meetings: 1    # Jumlah tombol darurat
-
-# ─── Daftar Tugas ───
-tasks:
-  - type: "WIRING"
-    description: "Perbaiki panel kabel yang rusak"
-  - type: "SCAN"
-    description: "Pindai DNA di laboratorium"
-  - type: "FUEL"
-    description: "Isi bahan bakar pesawat"
-  - type: "OXYGEN"
-    description: "Isi ulang tabung oksigen"
-  - type: "REACTOR"
-    description: "Stabilkan reaktor nuklir"
-
-# ─── Sabotase ───
-sabotages:
-  - reactor:
-      repair-time: 30
-      effect: "explosion"
-  - lights:
-      effect: "blindness"
-  - oxygen:
-      repair-time: 45
-      effect: "drowning"
-
-# ─── Pesan ───
-messages:
-  prefix: "&8[&cAmongUs&8]&r "
-  game-start: "&aGame dimulai! Selamat bermain!"
-  crewmate-win: "&a🏆 Crewmate menang! Tugas selesai semua!"
-  impostor-win: "&c👾 Impostor menang! Semua crewmate mati!"
-  task-complete: "&a✅ Tugas selesai! Tersisa {remaining} tugas"
-  killed: "&c💀 Kamu dibunuh oleh Impostor!"
-  voted-out: "&e🗳️ {player} dikeluarkan dari pesawat!"
+## Set Lokasi
+```text
+/ib setlobby
+/ib setmap
+/ib setmeeting
+/ib setpulau1
+/ib setpulau2
+/ib setjembatankiri <lebar>
+/ib setjembatankanan <lebar>
 ```
+
+## NPC
+```text
+/ib setnpcjembatan [nama]
+/ib setnpcname <nama>
+```
+
+## Task
+```text
+/setnpc <nama> <durasi>
+/setpohon
+/setchest
+/ib autochest <radius>
+/ib autooak <radius>
+/ib autofarmland <radius>
+```
+
+## Sabotase
+```text
+/ib setlamp
+/ib autolamp <radius>
+/ib setgenerator
+```
+
+---
+
+# 🎮 Cara Main
+
+1. Jalankan `/ib start`
+2. Role dibagikan otomatis.
+3. Crewmate menyelesaikan task dan membangun jembatan.
+4. Impostor membunuh serta melakukan sabotase.
+5. Meeting dilakukan dengan `/vote`.
+6. Tim yang memenuhi syarat kemenangan akan menang.
+
+---
+
+# 📋 Command
+
+| Command | Fungsi |
+|---|---|
+| `/ib start` | Mulai game |
+| `/ib stop` | Stop game |
+| `/ib reload` | Reload plugin |
+| `/ib export` | Export config |
+| `/ib import <file>` | Import config |
+| `/ib setting <key> <value>` | Ubah setting |
+| `/ib testing <true/false>` | Testing mode |
+| `/ib role <role>` | Force role |
+| `/ib sabotage` | Sabotase |
+| `/vote <player>` | Vote |
+| `/skip` | Skip vote |
+
+---
+
+# 🔐 Permission
+
+| Permission |
+|---|
+| islandbridge.* |
+| islandbridge.admin |
+| islandbridge.player |
+| islandbridge.bridge |
+| islandbridge.task |
+| islandbridge.sabotage |
+| islandbridge.setting |
+| islandbridge.reload |
+| islandbridge.testing |
+
+---
+
+# 👥 Role
+
+- Crewmate
+- Impostor
+- Joker
+- Skin Walker
+
+---
+
+# ⚙️ Setting
+
+Gunakan:
+
+```text
+/ib setting <key> <value>
+```
+
+Key:
+- cdkill
+- minplayers
+- countdown
+- meetingtime
+- joker
+- impostorcount
+- skinwalkerblind
+- autodetectlamp
+- autodetecttask
+
+---
+
+# ❓ FAQ
+
+- Minimal player: 4
+- Config: `plugins/IslandBridgeAmongUs/config.yml`
+- Reload: `/ib reload`
+
+---
 
 ---
 
