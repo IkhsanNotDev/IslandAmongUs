@@ -1,4 +1,3 @@
-```markdown
 <div align="center">
 
 # 🚀 Among Us Island
@@ -78,7 +77,6 @@ flowchart TD
     F --> P{🛠️ Sabotase Diperbaiki?}
     P -->|Tidak & ⏰ Waktu Habis| Q[👾 Impostor Menang]
     P -->|Ya| E
-```
 
 </div>
 
@@ -117,7 +115,6 @@ flowchart TD
 
 ## ⚙️ Konfigurasi (config.yml)
 
-```yaml
 # ═══════════════════════════════════════
 #  Among Us Island - Config.yml
 # ═══════════════════════════════════════
@@ -166,7 +163,6 @@ messages:
   task-complete: "&a✅ Tugas selesai! Tersisa {remaining} tugas"
   killed: "&c💀 Kamu dibunuh oleh Impostor!"
   voted-out: "&e🗳️ {player} dikeluarkan dari pesawat!"
-```
 
 ---
 
@@ -197,7 +193,6 @@ messages:
 
 </div>
 
-```bash
 # Clone repository
 git clone https://github.com/yourusername/AmongUsIsland.git
 
@@ -208,7 +203,6 @@ cd AmongUsIsland
 mvn clean package
 
 # Hasil .jar ada di folder target/
-```
 
 **Teknologi yang digunakan:**
 - [Spigot API](https://www.spigotmc.org/) - Framework utama
@@ -236,7 +230,6 @@ Silakan buka **Issue** atau kirim **Pull Request** — kontribusi sangat terbuka
 
 <div align="center">
 
-```
 MIT License
 
 Copyright (c) 2024 [Nama Kamu]
@@ -247,7 +240,6 @@ in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions...
-```
 
 </div>
 
@@ -273,7 +265,6 @@ furnished to do so, subject to the following conditions...
 
 ---
 
-**Made with ❤️ by IkhsanNotDev**
+**Made with ❤️ by [Nama Kamu]**
 
 </div>
-```
