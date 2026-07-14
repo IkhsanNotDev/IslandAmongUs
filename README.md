@@ -304,8 +304,6 @@ Key:
 
 #### Client (Player)
 *   **Java Edition:** Install mod Simple Voice Chat sesuai dengan mod loader yang digunakan (Fabric/Forge/NeoForge).
-*   **Bedrock Edition:** Wajib menggunakan plugin pendukung untuk Geyser:
-    [**DOWNLOAD SIMPLEVOICE-GEYSER**](https://modrinth.com/plugin/simplevoice-geyser)
 
 ---
 
